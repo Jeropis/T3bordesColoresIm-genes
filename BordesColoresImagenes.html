@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes, colores e imágenes</title>
+    <style>
+        #imagen{
+            border: solid;
+            border-color: black;
+            background-image: url('lazarillo_de_tormes.jpg');
+            margin: auto;
+            height: 800px;
+            width: 50vw;
+
+        }
+
+        #imagen:hover{
+            height: 30vh;
+            width: 30vw;
+            background-image: url('Tormes.jpg');
+            padding: 20px;
+
+        }
+
+        div{
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        #texto{
+
+            margin: auto;
+            padding: 2%;
+            text-align: center;
+            width: 90vw;
+            height: 20vh;
+
+
+        }
+        #texto:hover{
+            display: flex;
+            background-color: rgb(78, 58, 209);
+            height: 5vh;
+            overflow: scroll;
+            scroll-padding: 10px;
+            padding-top: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+
+        }
+        p:hover{
+            color: chocolate;
+
+        }
+        p::after{
+            content: "[Cont]..";
+        }
+        p:last-child{
+            color: rgb(13, 145, 162);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+        }
+        p:hover:nth-child(even) {
+            color: rgb(255, 0, 0);
+            background-color: rgb(111, 0, 255);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id ="imagen" >
+    </div>
+    <div id="texto">
+        <p>En este tiempo vino a posar al mesón un ciego, el cual, pareciéndole que yo sería para adestralle, me pidió a mi madre, y ella me encomendó a él, diciéndole cómo era hijo de un buen hombre, el cual, por ensalzar la fe, había muerto en la de los Gelves, y que ella confiaba en Dios no saldría peor hombre que mi padre, y que le rogaba me tratase bien y mirase por mí, pues era huérfano.Comenzamos nuestro camino, y en muy pocos días me mostró jeringonza; y como me viese de buen ingenio, holgábase mucho y decía: «Yo oro ni plata no te puedo dar; mas avisos para vivir muchos te mostraré.»</p> 
+        <p>Él respondió que así lo haría y que me recibía, no por mozo, sino por hijo. Y así le comencé a servir y adestrar a mi nuevo y viejo amo.</p>
+        <p>Como estuvimos en Salamanca algunos días, pareciéndole a mi amo que no era la ganancia a su contento, determinó irse de allí; y cuando nos hubimos de partir, yo fui a ver a mi madre, y, ambos llorando, me dio su bendición y dijo: — Hijo, ya sé que no te veré más. Procura de ser bueno, y Dios te guíe. Criado te he y con buen amo te he puesto; válete por ti. Y así me fui para mi amo, que esperándome estaba. Parecióme que en aquel instante desperté de la simpleza en que, como niño, dormido estaba. Dije entre mí: «Verdad dice éste, que me cumple avivar el ojo y avisar, pues solo soy, y pensar cómo me sepa valer.»</p>
+        </div>
+    </body>
+</html>
